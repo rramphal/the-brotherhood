@@ -1,4 +1,4 @@
-# 1 Sinatra Restful Crud 
+# P1 Sinatra Restful Crud 
  
 ##Learning Competencies 
 
@@ -7,8 +7,6 @@
 * Use RESTful routes
 
 ##Summary 
-
- ## Overview
 
 Using Sinatra, create a simple notes application with a single notes table in the database and all [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) routes and views.  
 
@@ -27,13 +25,7 @@ Modify the skeleton code to achieve the following functionality:
 4. A user can Delete an existing note. 
 5. Verify that a user really wants to delete a particular note. 
 
-Your note table should have a `title` and `content` field.  You should use RESTful routes for each operation. 
-
-
-### You Will Know You Are Done When:
-* You can Create, Read, Update and Delete a note.
-* You use appropriate CRUD routes for each operation
-* Your can describe how the routes and views interact. 
+Your note table should have a `title` and `content` field.  You should use [RESTful routes](http://guides.rubyonrails.org/routing.html) for each operation. 
 
 
 ### Release 1 : Add Partials 
@@ -49,3 +41,4 @@ Redo your application so that each CRUD route is triggered from an AJAX request.
 
 * [Sinatra Crud Tutorial ](http://net.tutsplus.com/tutorials/ruby/singing-with-sinatra/) 
 * [Rendering Partials in Sinatra](http://www.sinatrarb.com/faq.html#partials) 
+* [RESTful routes](http://guides.rubyonrails.org/routing.html)
