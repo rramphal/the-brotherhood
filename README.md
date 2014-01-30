@@ -10,7 +10,7 @@
 
 Using Sinatra, create a simple notes application with a single notes table in the database and all [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) routes and views.  
 
-You can start from the included skeleton in the `sinatra_rest` directory.
+You can start from the included skeleton in the `p1_crud` directory.
 
 ##Releases
 
