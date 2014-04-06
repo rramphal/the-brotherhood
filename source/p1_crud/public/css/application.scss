@@ -1,0 +1,137 @@
+// FONTS
+
+@import url('http://fonts.googleapis.com/css?family=Cinzel:400,700');
+
+// MIXINS
+
+@import '__border_radius';
+@import '__background_size';
+@import '__background_image';
+
+// PARTIALS
+
+@import '_test';
+
+// CONSTANTS
+
+$FONT_STACK:       Helvetica, sans-serif;
+$HEADER_FONT:      Cinzel;
+$BACKGROUND_COLOR: #000000;
+$TEXT_COLOR:       #FFFFFF;
+$SITE_WIDTH:       100vw;
+$SITE_HEIGHT:      100vh;
+$FONT_SIZE:        18px;
+
+// MAIN CSS
+
+body {
+  font-family: $FONT_STACK;
+  font-size: $FONT_SIZE;
+  color: $TEXT_COLOR;
+  width: $SITE_WIDTH;
+  background-color: $BACKGROUND_COLOR;
+  background-image: url('/img/ac.png');
+  background-repeat: no-repeat;
+  background-position: -500px 0px;
+}
+
+#container {
+  background-color: lighten($BACKGROUND_COLOR, 5%);
+  opacity: 0.90;
+  width: $SITE_WIDTH * 0.75;
+  height: 96vh;
+  float: right;
+  padding: 0 1vw 0 1vw;
+  margin: 2vh;
+}
+
+#missions {
+  height: 80vh;
+  overflow: auto;
+}
+
+#header {
+  font-family: $HEADER_FONT;
+  font-weight: normal;
+  font-size: 300%;
+  text-align: center;
+  color: red;
+  height: 10vh;
+
+  &:first-child:first-letter {
+    font-size: 135%;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  @include background-image-linear-gradient(left, rgba(180,180,180,0), rgba(180,180,180,0.5));
+  margin: 5px 0 20px 0;
+}
+
+p {
+  // @include border-radius(10px);
+}
+
+.mission {
+  margin-bottom: 10px;
+  padding: 15px 10px 15px 70px;
+  background-image: url('/img/ac_emblem_white.png');
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-color: lighten($BACKGROUND_COLOR, 10%);
+  min-height: 100px;
+}
+
+.completed {
+  background-image: url('/img/ac_emblem_gray.png');
+  opacity: 0.45;
+}
+
+.theader {
+  font-weight: bold;
+  padding-right: 20px;
+  font-variant: small-caps;
+  font-family: $HEADER_FONT;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    float: left;
+    padding-top: 5px;
+    font-size: 80%;
+    font-variant: small-caps;
+
+    &:before {
+      content: "[";
+      padding-right: 3px;
+    }
+
+    &:after {
+      content: "]";
+      padding-left: 3px;
+      padding-right: 5px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: lighten($BACKGROUND_COLOR, 45%);
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}

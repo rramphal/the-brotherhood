@@ -1,0 +1,7 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius; // for Chrome
+     -moz-border-radius: $radius; // for Firefox
+      -ms-border-radius: $radius; // for IE
+       -o-border-radius: $radius; // for Opera
+          border-radius: $radius;
+}

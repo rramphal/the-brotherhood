@@ -1,0 +1,7 @@
+@mixin background-image-linear-gradient($position, $color_ends, $color_middle) {
+  background-image: -webkit-linear-gradient($position, $color_ends, $color_middle, $color_ends);
+  background-image:    -moz-linear-gradient($position, $color_ends, $color_middle, $color_ends);
+  background-image:     -ms-linear-gradient($position, $color_ends, $color_middle, $color_ends);
+  background-image:      -o-linear-gradient($position, $color_ends, $color_middle, $color_ends);
+  background-image:         linear-gradient($position, $color_ends, $color_middle, $color_ends);
+}

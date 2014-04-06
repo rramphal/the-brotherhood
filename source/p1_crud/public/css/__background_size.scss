@@ -1,0 +1,7 @@
+@mixin background_size($value) {
+  -webkit-background-size: $value; // for Chrome
+     -moz-background-size: $value; // for Firefox
+      -ms-background-size: $value; // for IE
+       -o-background-size: $value; // for Opera
+          background-size: $value;
+}
