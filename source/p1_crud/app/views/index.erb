@@ -1,11 +1,3 @@
 <div id="container">
-  <div id="header">Missions</div>
-  
-  <hr>
-
-  <div id="missions">
-    <% for mission in @missions %>
-      <%= erb :_mission, locals: {mission: mission} %>
-    <% end %>
-  </div>
+  <%= erb :_login, layout: false %>
 </div>

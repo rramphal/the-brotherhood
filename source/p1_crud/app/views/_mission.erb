@@ -1,8 +1,8 @@
-<div class="mission completed">
+<div class="mission<%= mission.completed ? " completed" : "" %>">
   <table>
-    <tr><td><span class="theader">target:</span></td><td>Person</td></tr>
-    <tr><td><span class="theader">location:</span></td><td>Place</td></tr>
-    <tr><td><span class="theader">mo:</span></td><td>MO</td></tr>
+    <tr><td><span class="theader">target</span></td><td><%= mission.target %></td></tr>
+    <tr><td><span class="theader">location</span></td><td><%= mission.location %></td></tr>
+    <tr><td><span class="theader">mo</span></td><td><%= mission.mo %></td></tr>
   </table>
 
   <ul class="links">

@@ -18,6 +18,19 @@ body {
   padding: 0 1vw 0 1vw;
   margin: 2vh; }
 
+#wrapper {
+  display: table; }
+
+#login {
+  height: 95vh;
+  width: 95vw;
+  background-image: url("/img/guard.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 150%; }
+
 #missions {
   height: 80vh;
   overflow: auto; }
@@ -59,7 +72,8 @@ hr {
   font-weight: bold;
   padding-right: 20px;
   font-variant: small-caps;
-  font-family: Cinzel; }
+  font-family: Cinzel;
+  text-align: right; }
 
 ul {
   list-style-type: none;
@@ -81,6 +95,47 @@ ul {
 a {
   text-decoration: none;
   color: #737373; }
+
+#createmission {
+  text-align: center; }
+
+#newmissiontable, #logintable {
+  margin-left: auto;
+  margin-right: auto; }
+
+input {
+  background-color: #e6e6e6; }
+
+#submit {
+  position: relative; }
+
+#submitmessage {
+  position: absolute;
+  display: none;
+  padding-top: 25px;
+  padding-left: 10px;
+  color: gray;
+  font-variant: small-caps;
+  font-size: 80%; }
+
+#submitmessage:before {
+  content: "/ "; }
+
+#submitmessage:after {
+  content: " /"; }
+
+#submit:hover #submitmessage {
+  display: inline; }
+
+#submitbutton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0 10px 0; }
+
+button:hover #submitmessage {
+  display: block; }
 
 .message, .success {
   border: 1px solid #ccc;

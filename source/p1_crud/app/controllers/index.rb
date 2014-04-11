@@ -1,4 +1,13 @@
 get '/' do
-  # Look in app/views/index.erb
   erb :index
+end
+
+get '/missions/?' do
+  @missions = Mission.order(created_at: :desc)
+  erb :missions
+end
+
+post '/missions/?' do
+  Mission.create(params)
+  redirect '/'
 end
