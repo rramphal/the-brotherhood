@@ -58,10 +58,11 @@ body {
   display: table-cell;
   vertical-align: middle;
   font-size: 150%;
+  text-align: center;
 }
 
 #missions {
-  height: 80vh;
+  height: 65vh;
   overflow: auto;
 }
 
@@ -145,27 +146,30 @@ a {
   text-align: center;
 }
 
-#newmissiontable, #logintable {
+#newmissiontable {
   margin-left: auto;
   margin-right: auto;
+}
+
+#login_username, #login_password {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  font-family: $HEADER_FONT;
 }
 
 input {
   background-color: darken($TEXT_COLOR, 10%);
 }
 
-#submit {
-  position: relative;
-}
-
 #submitmessage { 
-  position: absolute;
-  display: none;
-  padding-top: 25px;
-  padding-left: 10px;
-  color: gray;
+  color: darken($TEXT_COLOR, 10%);
   font-variant: small-caps;
   font-size: 80%;
+  opacity: 0;
+  margin-top: -10px;
 }
 
 #submitmessage:before {
@@ -174,10 +178,6 @@ input {
 
 #submitmessage:after {
   content: " /";
-}
-
-#submit:hover #submitmessage {
-  display : inline;
 }
 
 #submitbutton {

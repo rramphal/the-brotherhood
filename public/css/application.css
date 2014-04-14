@@ -29,10 +29,11 @@ body {
   background-position: center;
   display: table-cell;
   vertical-align: middle;
-  font-size: 150%; }
+  font-size: 150%;
+  text-align: center; }
 
 #missions {
-  height: 80vh;
+  height: 65vh;
   overflow: auto; }
 
 #header {
@@ -99,33 +100,33 @@ a {
 #createmission {
   text-align: center; }
 
-#newmissiontable, #logintable {
+#newmissiontable {
   margin-left: auto;
   margin-right: auto; }
+
+#login_username, #login_password {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  font-family: Cinzel; }
 
 input {
   background-color: #e6e6e6; }
 
-#submit {
-  position: relative; }
-
 #submitmessage {
-  position: absolute;
-  display: none;
-  padding-top: 25px;
-  padding-left: 10px;
-  color: gray;
+  color: #e6e6e6;
   font-variant: small-caps;
-  font-size: 80%; }
+  font-size: 80%;
+  opacity: 0;
+  margin-top: -10px; }
 
 #submitmessage:before {
   content: "/ "; }
 
 #submitmessage:after {
   content: " /"; }
-
-#submit:hover #submitmessage {
-  display: inline; }
 
 #submitbutton {
   border: none;

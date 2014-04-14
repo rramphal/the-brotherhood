@@ -6,6 +6,10 @@
   </table>
 
   <ul class="links">
+    <% if not mission.completed %>
+    <li><a href="/note/id/complete">complete</a></li>
+    <li><a href="/note/id/edit">edit</a></li>
+    <% end %>
     <li><a href="/note/id/remove">remove</a></li>
   </ul>
 </div>
