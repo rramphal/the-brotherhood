@@ -33,6 +33,7 @@ end
 delete '/sessions/:id/?' do
   session[:user_id] = nil
   session.clear
+  session.destroy
   redirect "/"
 end
 
@@ -42,7 +43,7 @@ get '/users/new/?' do
   if current_user
     redirect "/missions/?"
   else
-    erb :_new_user
+    erb :_new_user, layout: false
   end
 end
 
@@ -92,7 +93,7 @@ get '/missions/:id/update/?' do # return a form to edit mission
   if mission.user_id != current_user.id
     redirect '/missions'
   else
-    erb :_update_mission, locals: { mission: mission }
+    erb :_update_mission, locals: { mission: mission }, layout: false
   end
 end
 
@@ -108,7 +109,7 @@ put '/missions/:id/?' do # update a mission
     mission.location = params[:location]
     mission.mo = params[:mo]
     mission.save
-    redirect "/missions/#{params[:id]}"
+    erb :_mission, locals: { mission: mission }, layout: false
   end
 end
 

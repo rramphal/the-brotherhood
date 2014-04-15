@@ -35,7 +35,7 @@ body {
   font-size: 150%;
   text-align: center; }
 
-#signup {
+#register {
   position: fixed;
   height: 19px;
   width: 31px;
@@ -114,6 +114,9 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+#updatemission {
+  margin-bottom: 20px; }
+
 #login_username, #login_password {
   display: block;
   text-align: center;
@@ -124,6 +127,13 @@ a {
 
 input {
   background-color: #e6e6e6; }
+
+#submitbutton, #loginbutton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0 10px 0; }
 
 #submitmessage {
   color: #e6e6e6;
@@ -138,20 +148,5 @@ input {
 #submitmessage:after {
   content: " /"; }
 
-#submitbutton, #loginbutton {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  text-align: center;
-  padding: 10px 0 10px 0; }
-
 button:hover #submitmessage {
   display: block; }
-
-.message, .success {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
-
-.success {
-  border-color: green; }
