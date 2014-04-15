@@ -14,20 +14,16 @@ post '/sessions/?' do
   username = params[:username]
   password = params[:password]
 
-  user = User.where("username = ?", username)
+  user = User.find_by_username(username)
 
-  if user.empty?
-    redirect "/" # user not found
-  else
-    user = user.first
-  end
+  redirect "/" if user.nil? # username incorrect
 
-  if user.password === password
+  if user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
     session[:user_id] = user.id
     redirect "/missions/?"
   end
 
-  redirect "/" # password incorrect
+    redirect "/" # password incorrect
 end
 
 delete '/sessions/:id/?' do

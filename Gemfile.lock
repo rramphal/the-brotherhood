@@ -18,6 +18,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     backports (3.6.0)
+    bcrypt (3.1.7)
     builder (3.1.4)
     daemons (1.1.9)
     eventmachine (1.0.3)
@@ -60,6 +61,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   activesupport
+  bcrypt
   pg
   rack-test
   rake

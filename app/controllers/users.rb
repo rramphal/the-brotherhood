@@ -9,7 +9,19 @@ get '/users/new/?' do
 end
 
 post '/users/?' do
-  newuser = User.create(params)
-  session[:user_id] = newuser.id
-  redirect "/missions/?"
+  password_salt = BCrypt::Engine.generate_salt
+  password_hash = BCrypt::Engine.hash_secret(params[:password], password_salt)
+
+  newuser = User.new(
+    username: params[:username],
+    password_hash: password_hash,
+    password_salt: password_salt
+  )
+
+  if newuser.save
+    session[:user_id] = newuser.id
+    redirect "/missions/?"
+  else
+    redirect "/"
+  end
 end
