@@ -1,0 +1,15 @@
+<%= erb :_navbar %>
+
+<div id="header">Missions</div>
+
+<hr>
+
+<%= erb :_new_mission %>
+
+<hr>
+
+<div id="missions">
+  <% for mission in missions %>
+    <%= erb :_mission, locals: { mission: mission } %>
+  <% end %>
+</div>

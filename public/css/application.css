@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Cinzel:400,700");
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Cinzel, Helvetica, sans-serif;
   font-size: 18px;
   color: white;
   width: 100vw;
@@ -18,6 +18,9 @@ body {
   padding: 0 1vw 0 1vw;
   margin: 2vh; }
 
+#sign_out {
+  float: right; }
+
 #wrapper {
   display: table; }
 
@@ -32,8 +35,15 @@ body {
   font-size: 150%;
   text-align: center; }
 
+#signup {
+  position: fixed;
+  height: 19px;
+  width: 31px;
+  top: 516px;
+  left: 85px; }
+
 #missions {
-  height: 65vh;
+  height: 50vh;
   overflow: auto; }
 
 #header {
@@ -97,10 +107,10 @@ a {
   text-decoration: none;
   color: #737373; }
 
-#createmission {
+#inputmission {
   text-align: center; }
 
-#newmissiontable {
+#inputmissiontable {
   margin-left: auto;
   margin-right: auto; }
 
@@ -128,7 +138,7 @@ input {
 #submitmessage:after {
   content: " /"; }
 
-#submitbutton {
+#submitbutton, #loginbutton {
   border: none;
   background: transparent;
   cursor: pointer;

@@ -1,0 +1,15 @@
+<div id="inputmission">
+  <form action="/missions/<%= mission.id %>" method="post">
+    <input type="hidden" name="_method" value="put">
+
+    <table id="inputmissiontable">
+      <tr><td class="theader">target</td><td><input type="text" name="target" value="<%= mission.target %>"></td></tr>
+      <tr><td class="theader">location</td><td><input type="text" name="location" value="<%= mission.location %>"></td></tr>
+      <tr><td class="theader">mo</td><td><input type="text" name="mo" value="<%= mission.mo %>"></td></tr>
+    </table>
+    <div id="submit">
+      <button id="submitbutton" type="submit"><img src="/img/ac_emblem_white.png"></button>
+      <div id="submitmessage">update this mission</div>
+    </div>
+  </form>
+</div>

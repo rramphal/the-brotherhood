@@ -7,9 +7,9 @@
 
   <ul class="links">
     <% if not mission.completed %>
-    <li><a href="/note/id/complete">complete</a></li>
-    <li><a href="/note/id/edit">edit</a></li>
+    <li><a href="/missions/<%= mission.id %>/complete" class="complete">complete</a></li>
+    <li><a href="/missions/<%= mission.id %>/update">update</a></li>
     <% end %>
-    <li><a href="/note/id/remove">remove</a></li>
+    <li><a href="/missions/<%= mission.id %>/delete" class="delete">delete</a></li>
   </ul>
 </div>

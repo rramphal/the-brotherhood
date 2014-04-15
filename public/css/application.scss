@@ -14,7 +14,7 @@
 
 // CONSTANTS
 
-$FONT_STACK:       Helvetica, sans-serif;
+$FONT_STACK:       Cinzel, Helvetica, sans-serif;
 $HEADER_FONT:      Cinzel;
 $BACKGROUND_COLOR: #000000;
 $TEXT_COLOR:       #FFFFFF;
@@ -45,6 +45,10 @@ body {
   margin: 2vh;
 }
 
+#sign_out {
+  float: right;
+}
+
 #wrapper {
   display: table;
 }
@@ -61,8 +65,16 @@ body {
   text-align: center;
 }
 
+#signup {
+  position: fixed;
+  height: 19px;
+  width: 31px;
+  top: 516px;
+  left: 85px;
+}
+
 #missions {
-  height: 65vh;
+  height: 50vh;
   overflow: auto;
 }
 
@@ -142,11 +154,11 @@ a {
   color: lighten($BACKGROUND_COLOR, 45%);
 }
 
-#createmission {
+#inputmission {
   text-align: center;
 }
 
-#newmissiontable {
+#inputmissiontable {
   margin-left: auto;
   margin-right: auto;
 }
@@ -180,7 +192,7 @@ input {
   content: " /";
 }
 
-#submitbutton {
+#submitbutton, #loginbutton {
   border: none;
   background: transparent;
   cursor: pointer;

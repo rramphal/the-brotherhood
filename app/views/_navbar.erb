@@ -1,0 +1,8 @@
+<nav>
+  <% if current_user %>
+    <form action="/sessions/<%= current_user.id %>" method="post">
+      <input name="_method" type="hidden" value="delete" />
+      <input id="sign_out" type="submit" value="Sign Out">
+    </form>
+  <% end %>
+</nav>
