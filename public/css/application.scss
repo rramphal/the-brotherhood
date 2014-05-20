@@ -8,10 +8,6 @@
 @import '__background_size';
 @import '__background_image';
 
-// PARTIALS
-
-@import '_test';
-
 // CONSTANTS
 
 $FONT_STACK:       Cinzel, Helvetica, sans-serif;
@@ -188,7 +184,7 @@ input {
   padding: 10px 0 10px 0;
 }
 
-#submitmessage { 
+#submitmessage {
   color: darken($TEXT_COLOR, 10%);
   font-variant: small-caps;
   font-size: 80%;
