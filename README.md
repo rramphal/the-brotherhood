@@ -13,9 +13,10 @@ I really got into this challenge, and chose to focus on crafting a specific user
 2. Usernames are called "aliases."
 3. There is no obvious register page.
 4. If you want to register, you have to click on Connor's third knife. There is nothing that reveals this other than opening up the HTML source and finding the hidden div.
-5. Everything is cleanly implemented, but there is a sense of shadow in the fading and the hover effects.
-6. The site is a two-paged app: a landing/register/login page and a missions page. Everything is done with AJAX so that all implementation is hidden from the user.
-7. The Cinzel font is close to the original Assassin's Creed font (Trajan Pro, I believe).
+5. Failure to login simply redirects back to the homepage silently.
+6. Everything is cleanly implemented, but there is a sense of shadow in the fading and the hover effects.
+7. The site is a two-paged app: a landing/register/login page and a missions page. Everything is done with AJAX so that all implementation is hidden from the user.
+8. The Cinzel font is close to the original Assassin's Creed font (Trajan Pro, I believe).
 
 ![landing page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/landing.png)
 ![missions page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/missions.png)
