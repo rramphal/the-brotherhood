@@ -43,9 +43,9 @@ put '/missions/:id/?' do # update a mission
   redirect "/" unless current_user
 
   mission = Mission.find(params[:id])
-  
+
   redirect '/missions' if mission.user_id != current_user.id
-  
+
   mission.target = params[:target]
   mission.location = params[:location]
   mission.mo = params[:mo]
