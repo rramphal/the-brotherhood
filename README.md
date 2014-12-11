@@ -20,4 +20,4 @@ I really got into this challenge, and chose to focus on crafting a specific user
 ![landing page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/landing.png)
 ![missions page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/missions.png)
 
-This was an opportunity to teach myself [SASS](http://sass-lang.com), so there might be some contrived uses of mixins and partials. It was also an opportunity to practice using [LiveReload](http://livereload.com). I pushed it to [Heroku](http://assassinmissions.herokuapp.com), but the I didn't deploy the database correctly, so it's broken.
+This was an opportunity to teach myself [SASS](http://sass-lang.com), so there might be some contrived uses of mixins and partials. It was also an opportunity to practice using [LiveReload](http://livereload.com).
