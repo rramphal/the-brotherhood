@@ -3,7 +3,6 @@
 get '/missions/?' do # lists all missions
   redirect "/" unless current_user
 
-  user = current_user
   missions = current_user.missions.order(updated_at: :desc)
   erb :_missions, locals: { missions: missions }
 end
