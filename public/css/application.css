@@ -133,7 +133,7 @@ a {
   margin-bottom: 3px;
   font-family: Cinzel; }
 
-input[type="text"] {
+input {
   background-color: #e6e6e6; }
 
 #submitbutton, #loginbutton {
