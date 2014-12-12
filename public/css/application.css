@@ -2,9 +2,9 @@
 body {
   font-family: Cinzel, Helvetica, sans-serif;
   font-size: 18px;
-  color: white;
+  color: #FFFFFF;
   width: 100vw;
-  background-color: black;
+  background-color: #000000;
   background-image: url("/img/ac.png");
   background-repeat: no-repeat;
   background-position: -500px 0px; }
@@ -19,7 +19,15 @@ body {
   margin: 2vh; }
 
 #sign_out {
-  float: right; }
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: transparent;
+  border: none;
+  background-image: url("/img/ac_tetractys.png");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 31px; }
 
 #wrapper {
   display: table; }
@@ -125,7 +133,7 @@ a {
   margin-bottom: 3px;
   font-family: Cinzel; }
 
-input {
+input[type="text"] {
   background-color: #e6e6e6; }
 
 #submitbutton, #loginbutton {

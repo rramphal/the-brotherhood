@@ -42,7 +42,15 @@ body {
 }
 
 #sign_out {
-  float: right;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: transparent;
+  border: none;
+  background-image: url('/img/ac_tetractys.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 31px;
 }
 
 #wrapper {
@@ -172,7 +180,7 @@ a {
   font-family: $HEADER_FONT;
 }
 
-input {
+input[type="text"] {
   background-color: darken($TEXT_COLOR, 10%);
 }
 
