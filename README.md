@@ -18,7 +18,10 @@ I really got into this challenge, and chose to focus on crafting a specific user
 7. The site is a two-paged app: a landing/register/login page and a missions page. Everything is done with AJAX so that all implementation is hidden from the user.
 8. The Cinzel font is close to the original Assassin's Creed font (Trajan Pro, I believe).
 
-![landing page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/landing.png)
-![missions page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/missions.png)
+![login page](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/login.png)
+![add a mission](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/add.png)
+![list all missions](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/list.png)
+![update a mission](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/update.png)
+![complete a mission](https://raw.githubusercontent.com/rramphal/the-brotherhood/master/public/img/readme_screenshots/complete.png)
 
 This was an opportunity to teach myself [SASS](http://sass-lang.com), so there might be some contrived uses of mixins and partials. It was also an opportunity to practice using [LiveReload](http://livereload.com).
